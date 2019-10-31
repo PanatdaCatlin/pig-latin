@@ -58,7 +58,7 @@ $("#pig-latin").submit(function (event) {
     var userInput = $("#user-input").val();
     console.log("User Input: ", userInput);
     // Validate Inputs (if not vaild alerts and resets input)
-    if (userInput === "") {
+    if (userInput.trim() === "") {
         alert("Please enter a vaild input.");
         resetValue();
         return;
